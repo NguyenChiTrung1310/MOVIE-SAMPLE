@@ -1,0 +1,94 @@
+@import '../../styles/styles';
+
+.movie-schedule-page{
+    height: 120vh;
+
+    .screen{
+        margin-top: 60px;
+        width: 100%;
+        height: 20px;
+        background-color: lightsalmon;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    
+    .schedule-by-theater{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .movie-information{
+        background-image: url('../../assets/images/gold-ticket.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 95vh 200vh !important;
+
+        color: $black;
+        text-align: left;
+        overflow: scroll;
+        padding: 0 50px;
+
+        .ticket{
+            width: 100%;
+            height: 260px;
+            margin-top: 10px;
+
+            position: relative;
+
+            .ticket-section{
+                width: 100%;
+
+                .ticket-info{
+                    margin-bottom: 10px;
+                    .label-icon{
+                        vertical-align: bottom;
+                        padding-bottom: 4px;
+                    }
+                }    
+                
+            }
+            .detail-btn {
+                position: absolute;
+                // top: 10px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 120px;
+                height: 50px;
+                border: 1px solid $blue-3;
+                transition: all 0.5s;
+                cursor: pointer;
+          
+                display: inline-block;
+                position: relative;
+          
+                &::after {
+                  content: '»';
+                  position: absolute;
+                  opacity: 0;
+                  top: 45%;
+                  transform: translateY(-45%);
+                  right: -20px;
+                  transition: 0.5s;
+                }
+          
+                &:hover {
+                  padding-right: 24px;
+                  padding-left: 8px;
+                }
+          
+                &:hover::after {
+                  opacity: 1;
+                  right: 10px;
+                }
+            }
+
+            .style {
+                color: $blue-3;
+                font-family: 'Montserrat', sans-serif !important;
+                font-weight: bolder;
+            }
+        }
+    }
+}

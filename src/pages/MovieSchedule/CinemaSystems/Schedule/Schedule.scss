@@ -1,0 +1,11 @@
+@import '../../../../styles/styles';
+
+.schedule{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .schedule-item{
+        margin: 11px;
+    }
+}

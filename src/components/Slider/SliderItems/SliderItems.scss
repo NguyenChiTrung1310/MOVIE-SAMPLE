@@ -1,0 +1,33 @@
+@import ' ./../../../../styles/styles.scss';
+
+.imgCard {
+  position: relative;
+  border-radius: 4px;
+  background: $black-opacity;
+  color: #666;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(59, 43, 43, 0.2);
+  transition: 0.3s;
+  height: 300px;
+  .img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .MuiCardContent-root.cardBody {
+    border: 1px solid $black-opacity;
+    color: #ffffff;
+    padding: 0px;
+    .cardTitle {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .cardText {
+      margin-top: 10px;
+    }
+  }
+}
+
+.imgCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
